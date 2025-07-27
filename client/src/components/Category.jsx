@@ -1,90 +1,80 @@
 import React from 'react'
-import img1 from '../assets/Electronic/gadgets.jpg';
-import img2 from '../assets/Electronic/laptop.jpg';
-import img3 from '../assets/Electronic/mobile.jpg';
+import img1 from '../assets/all-jeckets/img1.avif';
+import img2 from '../assets/all-jeckets/img2.avif';
+import img3 from '../assets/all-jeckets/img3.jpg';
 
-import img4 from '../assets/beauty-skincare/kreems.jpg';
-import img5 from '../assets/make-up.jpg';
+import img4 from '../assets/all-jeckets/img4.jpg';
+import img5 from '../assets/all-jeckets/img5.jpg';
 
-import img6 from '../assets/books/book.jpg';
-import img7 from '../assets/books/novels.jpg';
+import img6 from '../assets/all-jeckets/img6.jpg';
+import img7 from '../assets/all-jeckets/img7.jpg';
 
-import img8 from '../assets/fashion/accessory.jpg';
-import img9 from '../assets/fashion/cloths.jpg';
-import img10 from '../assets/fashion/cloth.jpg';
-import img11 from '../assets/fashion/shoes.jpg';
+import img8 from '../assets/all-jeckets/img8.jpg';
+import img9 from '../assets/all-jeckets/img9.jpg';
+import img10 from '../assets/all-jeckets/img10.jpg';
+import img11 from '../assets/all-jeckets/img11.jpg';
 
-import img12 from '../assets/home-appliances/fans.jpg';
-import img13 from '../assets/home-appliances/iron.jpg';
-import img14 from '../assets/home-appliances/kichen.jpg';
+import img12 from '../assets/all-jeckets/img12.jpg';
+import img13 from '../assets/all-jeckets/img13.jpg';
+import img14 from '../assets/all-jeckets/img14.jpg';
 
-import img15 from '../assets/Fitness/exersice.jpg';
-import img16 from '../assets/Fitness/exersices.jpg';
+import img15 from '../assets/all-jeckets/img15.jpg';
+import img16 from '../assets/all-jeckets/img16.jpg';
 
-import img17 from '../assets/toys/toy-2.jpg';
-import img18 from '../assets/toys/toy.jpg';
+import img17 from '../assets/all-jeckets/img17.jpg';
+import img18 from '../assets/all-jeckets/img18.avif';
 
 const categories = [
   {
-    category: "Electronics",
+    category: "Lightweight",
     items: [
-      { name: "Mobile", image: img3 },
-      { name: "Laptop", image: img2 },
-      { name: "Gadgets", image: img1 }
-    ]
-  },
-  {
-    category: "Beauty & Skincare",
-    items: [
-      { name: "Creams", image: img4 },
-      { name: "Makeup", image: img5 },
-      { name: "Lips sticks", image: img5 }
+      { name: "Lightweight", image: img1 },
+      { name: "Lightweight", image: img2 },
+      { name: "Lightweight", image: img3 },
+     { name: " Lightweight", image: img4 },
 
     ]
   },
   {
-    category: "Books",
+    category: "Slim Urban Style",
     items: [
-      { name: "Novels", image: img7 },
-      { name: "Books", image: img6 },
-      { name: "Story", image: img7 },
+      { name: " Slim Urban Style", image: img4 },
+      { name: " Slim Urban Style", image: img6 },
+      { name: " Slim Urban Style", image: img7 },
+      { name: "Slim Urban Style", image: img18 },
 
     ]
   },
   {
-    category: "Fashion",
+    category: "biker jackets",
     items: [
-      { name: "Accessories", image: img8 },
-      { name: "Clothes", image: img9 },
-      { name: "Shoes", image: img11 }
+      { name: " biker jackets", image: img8 },
+      { name: " biker jackets", image: img9 },
+      { name: " biker jackets", image: img10 },
+      { name: "biker jackets", image: img11 },
     ]
   },
   {
-    category: "Home Appliances",
+    category: "Suede Jacket",
     items: [
-      { name: "Fans", image: img12 },
-      { name: "Iron", image: img13 },
-      { name: "Kitchen", image: img14 }
-    ]
-  },
-  {
-    category: "Fitness",
-    items: [
-      { name: "Exercise 1", image: img16 },
-      { name: "Exercise 2", image: img15 },
-      { name: "Exercise 3", image: img16 },
-    ]
-  },
-  {
-    category: "Toys",
-    items: [
-       { name: "Toy 1", image: img18 },
-      { name: "Toy 2", image: img17 },
-      { name: "Toy 3", image: img18 },
+      { name: "Suede Jacket", image: img8 },
+      { name: "Suede Jacket", image: img9 },
+      { name: "Suede Jacket", image: img11 },
+      { name: "Suede Jacket", image: img18 },
 
     ]
-  }
-];
+  },
+  {
+    category: "biker jackets",
+    items: [
+      { name: "biker jackets", image: img12 },
+      { name: "biker jackets", image: img13 },
+      { name: "biker jackets", image: img14 },
+      { name: "biker jackets", image: img16 },
+
+    ]
+  },
+  ];
 
 const gradientColors = [
   "from-pink-100 via-pink-50 to-yellow-100",

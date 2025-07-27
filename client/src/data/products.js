@@ -1,19 +1,18 @@
 // src/data/products.js
 
-import mobileImg from '../assets/Electronic/mobile.jpg';
-import laptopImg from '../assets/Electronic/laptop.jpg';
-import gadgetsImg from '../assets/Electronic/gadgets.jpg';
-import creamImg from '../assets/beauty-skincare/kreems.jpg';
-import makeupImg from '../assets/make-up.jpg';
-import bookImg from '../assets/books/book.jpg';
-import novelImg from '../assets/books/novels.jpg';
-
+import img1 from '../assets/mens-jeckets/img1.jpg';
+import img2 from '../assets/mens-jeckets/img2.jpg';
+import img3 from '../assets/mens-jeckets/img3.jpg';
+import img4 from '../assets/mens-jeckets/img4.jpg';
+import img5 from '../assets/mens-jeckets/img5.jpg';
+import img6 from '../assets/mens-jeckets/img6.jpg';
+ 
 const allProducts = [
   {
     id: "1",
     name: "Mobile",
     price: "Rs. 25000",
-    image: mobileImg,
+    image: img1,
     category: "Electronics",
     description: "Latest smartphone with amazing features.",
   },
@@ -21,7 +20,7 @@ const allProducts = [
     id: "2",
     name: "Laptop",
     price: "Rs. 65000",
-    image: laptopImg,
+    image: img2,
     category: "Electronics",
     description: "High-performance laptop for work and play.",
   },
@@ -29,7 +28,7 @@ const allProducts = [
     id: "3",
     name: "Gadgets",
     price: "Rs. 4500",
-    image: gadgetsImg,
+    image: img3,
     category: "Electronics",
     description: "Smart gadgets to simplify your life.",
   },
@@ -37,7 +36,7 @@ const allProducts = [
     id: "4",
     name: "Creams",
     price: "Rs. 850",
-    image: creamImg,
+    image: img4,
     category: "Beauty & Skincare",
     description: "Skin-nourishing cream for daily glow.",
   },
@@ -45,7 +44,7 @@ const allProducts = [
     id: "5",
     name: "Makeup Kit",
     price: "Rs. 3500",
-    image: makeupImg,
+    image: img5,
     category: "Beauty & Skincare",
     description: "Professional makeup kit for all looks.",
   },
@@ -53,7 +52,7 @@ const allProducts = [
     id: "6",
     name: "Books",
     price: "Rs. 600",
-    image: bookImg,
+    image: img6,
     category: "Books",
     description: "Educational and motivational books.",
   },
@@ -61,7 +60,7 @@ const allProducts = [
     id: "7",
     name: "Novels",
     price: "Rs. 750",
-    image: novelImg,
+    image: img4,
     category: "Books",
     description: "Best-selling novels to enjoy reading.",
   },

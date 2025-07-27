@@ -2,51 +2,52 @@
 import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
 
-import img1 from '../assets/headphoneImg.jpg';
-import img2 from '../assets/3794066.jpg';
-import img3 from '../assets/daren-inshape.jpg';
-import img4 from '../assets/fitness-tracker.jpg';
-import img5 from '../assets/gaming-mouse.jpg';
-import img6 from '../assets/laptop-stand.jpg';
+import img1 from '../assets/womens.jeckets/img1.jpg';
+import img2 from '../assets/womens.jeckets/img2.jpg';
+import img3 from '../assets/womens.jeckets/img3.jpg';
+import img4 from '../assets/mens-jeckets/img4.jpg';
+import img5 from '../assets/mens-jeckets/img5.jpg';
+import img6 from '../assets/mens-jeckets/img6.jpg';
 
 const products = [
-  {
-    id: 1,
-    name: 'Wireless Headphones',
-    price: 'Rs. 4,500',
-    image: img1,
-  },
-  {
-    id: 2,
-    name: 'Smart Watch',
-    price: 'Rs. 6,200',
-    image: img2,
-  },
-  {
-    id: 3,
-    name: 'Bluetooth Speaker',
-    price: 'Rs. 2,900',
-    image: img3,
-  },
-  {
-    id: 4,
-    name: 'Fitness Tracker',
-    price: 'Rs. 3,800',
-    image: img4,
-  },
-  {
-    id: 5,
-    name: 'Gaming Mouse',
-    price: 'Rs. 2,200',
-    image: img5,
-  },
-  {
-    id: 6,
-    name: 'Laptop Stand',
-    price: 'Rs. 1,900',
-    image: img6,
-  },
-];
+      {
+        id: 1,
+        name: 'Lightweight',
+        price: 'Rs. 8,500',
+        image: img1,
+      },
+      {
+        id: 2,
+        name: 'Biker',
+        price: 'Rs. 16,200',
+        image: img2,
+      },
+      {
+        id: 3,
+        name: 'Bomber',
+        price: 'Rs. 22,900',
+        image: img3,
+      },
+     {
+      id: 4,
+      name: 'Suede Jacket',
+      price: 'Rs. 93,800',
+      image: img4,
+    },
+    {
+      id: 5,
+      name: 'biker jackets',
+      price: 'Rs. 21,200',
+      image: img5,
+    },
+    {
+      id: 6,
+      name: 'Leather jackets for men',
+      price: 'Rs. 6,900',
+      image: img6,
+    },
+  
+ ];
 
 const FeaturedProducts = () => {
   const { addToCart } = useContext(CartContext);

@@ -1,46 +1,65 @@
  // src/components/Navbar.jsx
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
- 
+import { FaUserCircle } from 'react-icons/fa';
+import logo from '../assets/logo1.svg';
+import Search from '../pages/Search';
+
 const Navbar = () => {
   const { cartItems } = useContext(CartContext);
+  const [currency, setCurrency] = useState('pakistan');
+  const user = { name: "" };  
 
   return (
-    <nav className="flex justify-between items-center px-6 py-4 bg-white shadow sticky top-0 z-50">
-      <h1 className="text-2xl font-bold text-yellow-500">Mini Amazon 🛍️</h1>
+    <nav className="bg-white shadow-md sticky top-0 z-50 px-4 py-3">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        
+        {/* Left: Search */}
+        <div className="flex-shrink-0 w-1/3">
+          <Search />
+        </div>
 
-      <ul className="flex items-center gap-6 text-lg">
-        <li><Link to="/">Home</Link></li>
-        <li>
-       <Link
-      to="/products"
-      className="text-gray-700 hover:text-blue-600 font-medium px-4 py-2 transition duration-200"
-        >
-     Products
-    </Link>
-     </li>
-        <li className="relative">
-          <Link to="/cart" className="flex items-center gap-1">
-            🛒 Cart
+        {/* Center: Logo */}
+        <div className="w-1/3 flex justify-center">
+          <Link to="/">
+            <img src={logo} alt="Logo" className="h-10" />
+          </Link>
+        </div>
+
+        {/* Right: Account + Cart + Currency */}
+        <div className="flex items-center justify-end w-1/3 gap-4 text-sm sm:text-base">
+          
+          {/* Currency Dropdown */}
+          <select
+            value={currency}
+            onChange={(e) => setCurrency(e.target.value)}
+            className="border px-2 py-1 rounded-md"
+          >
+            <option value="USD">USD 🇺🇸</option>
+            <option value="PKR">PKR 🇵🇰</option>
+            <option value="EUR">EUR 🇪🇺</option>
+            <option value="INR">INR 🇮🇳</option>
+          </select>
+
+          {/* Account */}
+          <Link
+            to="/account"
+            className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+          >
+            <FaUserCircle className="text-xl" />
+            <span className="hidden sm:inline">{user.name}</span>
+          </Link>
+
+          {/* Cart */}
+          <Link to="/cart" className="relative flex items-center gap-1">
+            🛒
             <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
               {cartItems.length}
             </span>
           </Link>
-        </li>
-      </ul>
-      <Link
-  to="/checkout"
-  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-   >
-  Checkout
-    </Link>
-    <Link to="/order">
-  <button className="bg-blue-500 text-white px-4 py-2 rounded">
-    Order Now
-  </button>
-   </Link>
-
+        </div>
+      </div>
     </nav>
   );
 };
